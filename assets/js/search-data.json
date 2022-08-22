@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Testing Notebook",
-            "content": "Hello . This is my first post. Hello. | . System.out.print(&quot;Hello to my reader&quot;) . Hello to my reader .",
-            "url": "https://ninjabreadlord.github.io/chengfastpages/2022/08/21/test.html",
-            "relUrl": "/2022/08/21/test.html",
-            "date": " • Aug 21, 2022"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Code Testing Python",
             "content": "Here is some Python code. It should be a simple function that counts the amount of even numbers in a list. If it works it should return the number of even numbers in the list of numbers 1-8 (there are 4). . print(&quot;Hello&quot;) . Hello .",
             "url": "https://ninjabreadlord.github.io/chengfastpages/2022/08/21/pythoncodetest.html",
@@ -23,11 +12,22 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "Code Testing Java",
-            "content": "Here is some Java code. Testing the print function, should print Hello World. . class main{ public static void main(String[] args){ System.out.print(&quot;Hello&quot;); } } main.main(null) . Input In [1] class main{ ^ SyntaxError: invalid syntax .",
+            "content": "Here is some Java code. Testing the print function, should print Hello. . System.out.println(&quot;Hello&quot;) . Hello .",
             "url": "https://ninjabreadlord.github.io/chengfastpages/2022/08/21/javacodetest.html",
             "relUrl": "/2022/08/21/javacodetest.html",
+            "date": " • Aug 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "First Post",
+            "content": "Hello . This is my first post, just testing out markdown . I am excited for APCSA this year | . Link back to main page .",
+            "url": "https://ninjabreadlord.github.io/chengfastpages/2022/08/21/firstpost.html",
+            "relUrl": "/2022/08/21/firstpost.html",
             "date": " • Aug 21, 2022"
         }
         
