@@ -4,9 +4,9 @@
         "post0": {
             "title": "2022-08-23 Primitive Notes",
             "content": "Primitives . Basica bread and butter variable types(ie: String, int, etc.) | . Wrapper Classes . Wrappers usually uppercase in defining variable | Most in Java is OOP exclude primitives | . Hacks down below . //import java util all import java.util.Scanner; class Main{ public static void main(String[] args){ int myInteger = 10; boolean myBoolean = true; String myString = &quot;Hello&quot;; double myDouble = 5.0; //scanner for input Scanner input = new Scanner(System.in); System.out.print(&quot;Hello:&quot;); } } Main.main(null); . Hello: .",
-            "url": "https://ninjabreadlord.github.io/chengfastpages/2022/08/24/primitives-notes.html",
-            "relUrl": "/2022/08/24/primitives-notes.html",
-            "date": " • Aug 24, 2022"
+            "url": "https://ninjabreadlord.github.io/chengfastpages/2022/08/25/primitives-notes.html",
+            "relUrl": "/2022/08/25/primitives-notes.html",
+            "date": " • Aug 25, 2022"
         }
         
     
