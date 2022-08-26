@@ -158,22 +158,38 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">//import java util all  </span>
-<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
 
-<span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
-        <span class="kt">int</span> <span class="n">myInteger</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="kt">boolean</span> <span class="n">myBoolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-        <span class="n">String</span> <span class="n">myString</span> <span class="o">=</span> <span class="s">&quot;Hello&quot;</span><span class="p">;</span>
-        <span class="kt">double</span> <span class="n">myDouble</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SimpleCalculator</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>   
+        <span class="n">Scanner</span> <span class="n">input1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter an integer for joe: &quot;</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">joe</span> <span class="o">=</span> <span class="n">input1</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+        <span class="n">input1</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 
-        <span class="c1">//scanner for input</span>
-        <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Hello:&quot;</span><span class="p">);</span>
+        <span class="n">Scanner</span> <span class="n">input2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter a integer for joey: &quot;</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">joey</span> <span class="o">=</span> <span class="n">input2</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+        <span class="n">input2</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
+        <span class="kt">double</span> <span class="n">amogus</span> <span class="o">=</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">joe</span> <span class="o">+</span> <span class="n">joey</span><span class="p">;</span>
+
+        <span class="n">String</span> <span class="n">joseph</span> <span class="o">=</span> <span class="s">&quot;Hello I am Joseph&quot;</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I want to add joe and joey&quot;</span><span class="p">);</span>
+
+        <span class="n">Scanner</span> <span class="n">input3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Do I add joe and joey(True/False): &quot;</span><span class="p">);</span>
+        <span class="kt">boolean</span> <span class="n">joel</span> <span class="o">=</span> <span class="n">input3</span><span class="p">.</span><span class="na">nextBoolean</span><span class="p">();</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">joel</span><span class="p">){</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">joseph</span> <span class="o">+</span> <span class="s">&quot;, if I add joe(&quot;</span> <span class="o">+</span> <span class="n">joe</span> <span class="o">+</span> <span class="s">&quot;) and joey(&quot;</span> <span class="o">+</span> <span class="n">joey</span> <span class="o">+</span> <span class="s">&quot;) it gets me &quot;</span> <span class="o">+</span> <span class="n">amogus</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I guess joe and joey will never meet. The name&#39;s Joseph by the way&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+
     <span class="p">}</span>
 <span class="p">}</span>
-<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">SimpleCalculator</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -186,7 +202,9 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello:</pre>
+<pre>Enter an integer for joe: 
+Enter a integer for joey: 
+</pre>
 </div>
 </div>
 
