@@ -1,5 +1,4 @@
 ---
-toc: true
 layout: post
 title: Plans
 description: Ideas for managing information from Collegeboard
