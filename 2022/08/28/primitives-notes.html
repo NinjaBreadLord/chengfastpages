@@ -216,6 +216,63 @@ Hello I am Joseph, if I add joe(12) and joey(123) it gets me 135.0
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Seconds-to-Fortnight-Converter">Seconds to Fortnight Converter<a class="anchor-link" href="#Seconds-to-Fortnight-Converter"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">main</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">double</span> <span class="nf">fortnightConverter</span><span class="p">(</span><span class="kt">double</span> <span class="n">fortnight</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">days</span> <span class="o">=</span> <span class="n">fortnight</span><span class="o">*</span><span class="mi">14</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">seconds</span> <span class="o">=</span> <span class="n">days</span> <span class="o">*</span> <span class="mi">86400</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">seconds</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;How many fortnights?: &quot;</span><span class="p">);</span>
+        <span class="kt">double</span> <span class="n">fortnight</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">fortnight</span> <span class="o">+</span> <span class="s">&quot; fortnight in seconds is: &quot;</span> <span class="o">+</span> <span class="n">fortnightConverter</span><span class="p">(</span><span class="n">fortnight</span><span class="p">));</span>
+        
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>How many fortnights?: 
+1.0 fortnight in seconds is: 1209600.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
