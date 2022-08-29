@@ -1,8 +1,8 @@
 ---
 toc: true
 layout: post
-title: Future Collegeboard Idea Capturing
-description: Learning plan for PBL / College Board / Tech Talks
+title: Plans
+description: Ideas for managing information from Collegeboard
 image: https://media.istockphoto.com/photos/african-man-planning-picture-id506291724
 ---
 
