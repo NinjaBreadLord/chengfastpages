@@ -1,3 +1,9 @@
+---
+layout: post
+title: Focus and Habits
+description: Focus and Habits from video and goals
+
+---
 # Focus and Habits
 
 ## Learnings from the video
