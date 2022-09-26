@@ -33,7 +33,7 @@ permalink: /week5/js-table
     var counter = 0
     var body = []
     var list = "";
-    function enterterm() {
+    function enter() {
             var temp = {id: counter, name: yes.value};
             counter++;
             body.push(temp);
