@@ -11,47 +11,34 @@ permalink: /week5/js-table
 
 <br>
 <input id="value1" type="text" placeholder="Say Something">
-
 <button id="enter" type="submit" onclick="enter()">Enter Value</button>
-
 <table id="mainTable">
     <tr>
-        <th> ID </th>
-        <th> Name </th>
-        <th> Age </th>
-        <th> Grade </th>
+        <th> Your Words </th>
     </tr>
-
-
 </table>
-
 <br>
 
-### Raw JSON Output
-
-<div id="rawJSON"></div>
-
-
 <script>
-    var iBox = document.getElementById("value1");
+    var yes = document.getElementById("value1");
 
     var mainTable = document.getElementById("mainTable");
     var rawTable = document.getElementById("rawJSON");
 
-    iBox.addEventListener('keyup', function(event) {
+    yes.addEventListener('keyup', function(event) {
         if (event.keyCode === 13) {
             event.preventDefault();
             document.getElementById("enter").click();
         }
     var counter = 0
-    var iBody = []
+    var body = []
     var list = "";
     function enterterm() {
-            var tempBody = {id: counter, name: iBox.value, age: jBox.value, grade: kBox.value};
+            var temp = {id: counter, name: yes.value};
             counter++;
-            iBody.push(tempBody);
-            appendTable(tempBody);
-            jsonval = JSON.stringify(iBody);
+            body.push(temp);
+            appendTable(temp);
+            jsonval = JSON.stringify(body);
             rawTable.innerHTML = jsonval;
         }
     function appendTable(row) {
