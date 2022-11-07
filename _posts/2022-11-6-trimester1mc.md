@@ -27,13 +27,13 @@ description: Review of my multiple choice exam
 
 ![image](https://user-images.githubusercontent.com/89239598/200256362-a983e766-96f6-47e1-9d6d-d7e62ebebd0b.png)
 
-* Because of the usage of an enhanced for each loop, there is no need for the method .get does not need to be used making answer choice D wrong. v.getMileage() would be better as it only uses the variable "v" and nothing else, which is the proper way in using an enhanced loop. 
+* Because of the usage of an enhanced for each loop, there is no need for the method .get does not need to be used making answer choice D wrong. ```v.getMileage()``` would be better as it only uses the variable "v" and nothing else, which is the proper way in using an enhanced loop. 
 
 ### Question 15
  
 ![image](https://user-images.githubusercontent.com/89239598/200256409-bbf93c1d-cae1-4c96-8e1d-eec4a0b542df.png)
 
-* My selected answer(D) is incorrect because choice two does not work. Choice two provides data[k + 1] which would create an out of bounds error on the last part of the array. Choice 1 is correct, and therefore choice A would be correct. 
+* My selected answer(D) is incorrect because choice two does not work. Choice two provides ```data[k + 1]``` which would create an out of bounds error on the last part of the array. Choice 1 is correct, and therefore choice A would be correct. 
 
 ### Question 17
 
@@ -45,7 +45,7 @@ description: Review of my multiple choice exam
 
 ![image](https://user-images.githubusercontent.com/89239598/200256503-3a97e22d-3f6a-41bd-bf47-88fa5034c4a6.png)
 
-* !(!(a != b)) would just be (a != b), not (a==b) which was my selected answer. B would be a better choice because it contains the proper change through DeMorgan's Law. 
+* ```!(!(a != b))``` would just be ```(a != b)```, not ```(a==b)``` which was my selected answer. B would be a better choice because it contains the proper change through DeMorgan's Law. 
 
 ### Question 23 (Review)
 
@@ -57,4 +57,4 @@ description: Review of my multiple choice exam
 
 ![image](https://user-images.githubusercontent.com/89239598/200256624-d4476df2-6cb5-446c-b5d9-08f3cb62fb67.png)
 
-* Here is just a case of remembering the conditionals. This is an infinite loop as the condition k < 4 will never be satisfied. || means or, meaing that either one may work, which I forgot during the exam. 
+* Here is just a case of remembering the conditionals. This is an infinite loop as the condition k < 4 will never be satisfied. ```||``` means or, meaing that either one may work, which I forgot during the exam. 
