@@ -31,4 +31,22 @@ image.png
 
 image.png
 
-* 
+* Choice D is incorrect as the last value of the array will not be affected by the for loop as the for loop iterates through the length of the loop minus 1. Choice C would be better as it displays the correct final value of 7. 
+
+### Question 19 (Review Demorgan's Law)
+
+image.png
+
+* !(!(a != b)) would just be (a != b), not (a==b) which was my selected answer. B would be a better choice because it contains the proper change through DeMorgan's Law. 
+
+### Question 23 (Review)
+
+image.png
+
+* Here baboon would actually be inserted at the end of the array list as it begins with the letter 'b' and will be added at size-k which is at the end. From there, my order is correct in "bear" following "zebra" etc. I think I had a little trouble understanding the substring and remove commands, and thus need to look at it more in depth. 
+
+### Question 33 
+
+image.png
+
+* Here is just a case of remembering the conditionals. This is an infinite loop as the condition k < 4 will never be satisfied. || means or, meaing that either one may work, which I forgot during the exam. 
