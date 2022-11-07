@@ -1,0 +1,16 @@
+# AP 2014 MC Reflection + Corrections
+
+## Score 32/40 
+* Honestly a 32 out of 40 is fine with me, it barely makes the cutoff for a an 80%. However, I hope that my timing improves and thinking may speed up. Since starting, it took me around two hours to complete the entire thing. For most of the questions I had to use a pen and paper to consider each process, and then really think about it. Seeing how I got a 32/40 with the amount of time I put in, I think that I should really be doing better. I think my main problem is learning to understand large pieces of code(as in putting missing pieces or analyzing certain lines), and I hope that I may focus on that aspect in future tests. 
+
+> Corrections
+
+### Question 4
+
+image.png
+
+* I incorrectly chose the floated value instead of the value that fits the integer primitive. The answer 2.333 should be rounded down to 2. 
+
+### Question 10 
+
+* 
