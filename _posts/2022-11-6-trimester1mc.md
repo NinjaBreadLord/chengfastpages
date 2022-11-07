@@ -13,4 +13,22 @@ image.png
 
 ### Question 10 
 
+* Choice 1(A) would actually work as it returns value 0 from the function seqSearchRecHelper. Choice 2(B) would be the correct answer as if the data does contain the value 5, the function would instead return -1 creating an out of bounds error.
+
+### Question 14
+
+image.png
+
+* Because of the usage of an enhanced for each loop, there is no need for the method .get does not need to be used making answer choice D wrong. v.getMileage() would be better as it only uses the variable "v" and nothing else, which is the proper way in using an enhanced loop. 
+
+### Question 15
+ 
+image.png
+
+* My selected answer(D) is incorrect because choice two does not work. Choice two provides data[k + 1] which would create an out of bounds error on the last part of the array. Choice 1 is correct, and therefore choice A would be correct. 
+
+### Question 17
+
+image.png
+
 * 
