@@ -37,11 +37,6 @@ url: "https://NinjaBreadLord.github.io" # the base hostname & protocol for your 
 baseurl: "/chengfastpages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
-  social_links:
-    twitter: fastdotai
-    github: fastai
-
 # Set this to true to get LaTeX math equation support
 use_math: 
 
