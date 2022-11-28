@@ -138,12 +138,15 @@ window.onload = wrap_img;
 <span class="cm">     * isLeapYear(2019) returns False</span>
 <span class="cm">     * isLeapYear(2016) returns True</span>
 <span class="cm">     */</span>          
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isLeapYear</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// implementation not shown</span>
 
-        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-        <span class="p">}</span>
-        
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isLeapYear</span><span class="p">(</span><span class="kt">int</span> <span class="n">year</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">((</span><span class="n">year</span> <span class="o">-</span> <span class="mi">2016</span><span class="p">)</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>        
+    <span class="p">}</span>
+            
     <span class="cm">/** Returns the value representing the day of the week </span>
 <span class="cm">     * 0 denotes Sunday, </span>
 <span class="cm">     * 1 denotes Monday, ..., </span>
