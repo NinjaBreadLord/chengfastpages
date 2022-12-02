@@ -726,6 +726,17 @@ You guessed: 5 times
 <span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;iss&quot;</span><span class="p">);</span> 
 <span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;issipp&quot;</span><span class="p">);</span> 
 <span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;mississippi&quot;</span><span class="p">);</span>
+
+<span class="c1">//Part 2</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClubMembers</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MemberInfo</span><span class="o">&gt;</span> <span class="n">memberList</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addMembers</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">names</span><span class="p">,</span> <span class="kt">int</span> <span class="n">gradYear</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span> <span class="p">:</span> <span class="n">names</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">memberList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">MemberInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gradYear</span><span class="p">,</span> <span class="kc">true</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
