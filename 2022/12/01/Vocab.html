@@ -127,15 +127,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vocab">Vocab<a class="anchor-link" href="#Vocab"> </a></h2><ul>
-<li>Subclass Constructor - A subclass constructor forms after extending a previous class, and using the super(); method will take a method and replicate it in the new class. </li>
-<li>Overloading - When you use the same method name in a class each with different parameters. </li>
-<li>Overriding - When a subclass has the same name and parameters as the parent class</li>
-<li>Polymorphism - Multiple methods with the same name but different parameters </li>
-<li>Protected classes are used when you want to access the class within the package, subclasses. Can use extends to it to access. </li>
-<li>Wrapper Classes - Wrapper classes allow converting primitives into objects and vice versa, which allows java to be object oriented, as primitives aren’t an object by default</li>
-</ul>
-
+<h2 id="Vocab">Vocab<a class="anchor-link" href="#Vocab"> </a></h2>
 </div>
 </div>
 </div>
@@ -246,6 +238,111 @@ Hello
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Polymorphism - Multiple methods with the same name but different parameters, uses it at different times</li>
+<li>Overloading - When you use the same method name in a class each with different parameters. </li>
+<li>Overriding - When a subclass has the same name and parameters as the parent class</li>
+<li>Protected classes are used when you want to access the class within the package, subclasses. Can use extends to it to access. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="n">Person</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Person class Constructor&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+<span class="c1">// subclass Student extending the Person class</span>
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="p">{</span>
+    <span class="n">Student</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kd">super</span><span class="p">();</span>
+ 
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Student class Constructor&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+<span class="c1">// Driver Program</span>
+<span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Student</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Subclass Constructor - A subclass constructor forms after extending a previous class, and using the super(); method will take a method and replicate it in the new class. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Wrapper classes</span>
+<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="n">Integer</span> <span class="n">xObj</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">thing</span> <span class="o">=</span> <span class="n">xObj</span><span class="p">.</span><span class="na">toString</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">thing</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Wrapper Classes - Wrapper classes allow converting primitives into objects and vice versa, which allows java to be object oriented, as primitives aren’t an object by default. Changes variables into object types. </li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 
 
