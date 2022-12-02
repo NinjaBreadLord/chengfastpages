@@ -128,11 +128,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Vocab">Vocab<a class="anchor-link" href="#Vocab"> </a></h2><ul>
-<li>Inheritance/extends - takes aspects of an existing class and replicates it within another class using the extends method, simplifying code by a lot. </li>
 <li>Subclass Constructor - A subclass constructor forms after extending a previous class, and using the super(); method will take a method and replicate it in the new class. </li>
 <li>Overloading - When you use the same method name in a class each with different parameters. </li>
 <li>Overriding - When a subclass has the same name and parameters as the parent class</li>
-<li>Abstract Class - This class’s objects and methods can be referenced, however the class itself is not initialized. </li>
 <li>Polymorphism - Multiple methods with the same name but different parameters </li>
 <li>Protected classes are used when you want to access the class within the package, subclasses. Can use extends to it to access. </li>
 <li>Wrapper Classes - Wrapper classes allow converting primitives into objects and vice versa, which allows java to be object oriented, as primitives aren’t an object by default</li>
@@ -141,6 +139,113 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">organ</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;3 Organs&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Joe</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">organ</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;2 Organs&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="n">Joe</span> <span class="n">joe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Joe</span><span class="p">();</span>
+<span class="n">joe</span><span class="p">.</span><span class="na">organ</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2 Organs
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Abstract Class - This class’s objects and methods can be referenced, however the class itself is not initialized. </li>
+<li>Inheritance/extends - takes aspects of an existing class and replicates it within another class using the extends method, simplifying code by a lot. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Polymorphism</span> <span class="p">{</span>
+
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">output</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">output</span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">output</span><span class="p">(</span><span class="n">String</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">}</span>
+<span class="n">Polymorphism</span> <span class="n">polymorphism</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Polymorphism</span><span class="p">();</span>
+
+<span class="n">polymorphism</span><span class="p">.</span><span class="na">output</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="n">polymorphism</span><span class="p">.</span><span class="na">output</span><span class="p">(</span><span class="mf">100.2</span><span class="p">);</span>
+<span class="n">polymorphism</span><span class="p">.</span><span class="na">output</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>100
+100.2
+Hello
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
