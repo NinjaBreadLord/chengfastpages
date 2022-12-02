@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -208,6 +208,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1204586960
+-1
+-2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -257,7 +273,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 2 - OOP</span>
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
 <span class="c1">//initializing the class Goblin</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Goblin</span> <span class="p">{</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
@@ -354,12 +371,12 @@ window.onload = wrap_img;
         <span class="n">goblin1</span><span class="p">.</span><span class="na">setName</span><span class="p">(</span><span class="s">&quot;Joe Biden&quot;</span><span class="p">);</span>
         <span class="n">goblin1</span><span class="p">.</span><span class="na">setHP</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span>
         <span class="n">goblin1</span><span class="p">.</span><span class="na">setDMG</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-        <span class="n">goblin1</span><span class="p">.</span><span class="na">setHitChance</span><span class="p">(</span><span class="mf">0.5</span><span class="p">);</span>
+        <span class="n">goblin1</span><span class="p">.</span><span class="na">setHitChance</span><span class="p">(</span><span class="mf">0.2</span><span class="p">);</span>
 
         <span class="n">Goblin</span> <span class="n">goblin2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Goblin</span><span class="p">();</span>
         <span class="n">goblin2</span><span class="p">.</span><span class="na">setName</span><span class="p">(</span><span class="s">&quot;Donald Trump&quot;</span><span class="p">);</span>
-        <span class="n">goblin2</span><span class="p">.</span><span class="na">setHP</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
-        <span class="n">goblin2</span><span class="p">.</span><span class="na">setDMG</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="n">goblin2</span><span class="p">.</span><span class="na">setHP</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+        <span class="n">goblin2</span><span class="p">.</span><span class="na">setDMG</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
         <span class="n">goblin2</span><span class="p">.</span><span class="na">setHitChance</span><span class="p">(</span><span class="mf">0.75</span><span class="p">);</span>
 
         <span class="n">fight</span><span class="p">(</span><span class="n">goblin1</span><span class="p">,</span> <span class="n">goblin2</span><span class="p">);</span>
@@ -376,6 +393,51 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab-for-Unit-2">Vocab for Unit 2<a class="anchor-link" href="#Vocab-for-Unit-2"> </a></h2><ul>
+<li>Used things like Class creation, mutator methods, and accessor methods</li>
+<li>Usage of Private modifier in variable creation - least accessible modifier that can be only used in the class in itself
+<pre><code>  private String name;</code></pre>
+<ul>
+<li>name is private, no changes can be made to it outside the class</li>
+</ul>
+</li>
+<li><p>Compound Boolean Method - this includes using the &amp;&amp;, ||, and ! operators,</p>
+
+<pre><code>  while (goblin1.isAlive() &amp;&amp; goblin2.isAlive()){
+
+  }</code></pre>
+<ul>
+<li>Boolean expression for while the goblins are both alive</li>
+</ul>
+</li>
+<li><p>Tester Method - Main/tester method is used to test a class with a specific input to validate its working efficiency.</p>
+
+<pre><code>  public static void main(String[] args) {
+      Goblin goblin1 = new Goblin();
+      goblin1.setName("Joe Biden");
+      goblin1.setHP(12);
+      goblin1.setDMG(2);
+      goblin1.setHitChance(0.2);
+
+      Goblin goblin2 = new Goblin();
+      goblin2.setName("Donald Trump");
+      goblin2.setHP(10);
+      goblin2.setDMG(3);
+      goblin2.setHitChance(0.75);
+
+      fight(goblin1, goblin2);
+  }</code></pre>
+<ul>
+<li>This is a main method used that tests the class making two created goblins named "Joe Biden" and "Donald Trump" fight each other</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -383,7 +445,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// Boolean Expressions</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 3 - Boolean Expressions</span>
 
 <span class="c1">// 2009 3b</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">BatteryCharger</span> <span class="p">{</span>
@@ -443,7 +505,7 @@ window.onload = wrap_img;
     <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isBalanced</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">delimiters</span><span class="p">)</span> <span class="p">{</span>
         <span class="kt">int</span> <span class="n">opencount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="kt">int</span> <span class="n">closecount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">delimiters</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">:</span> <span class="n">delimiters</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">delimiters</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">openDel</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">opencount</span><span class="o">++</span><span class="p">;</span>
             <span class="p">}</span>
@@ -465,9 +527,52 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">// Unit 3 - Boolean Expressions</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">// 2009 3b</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">public class BatteryCharger {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public int getChargeStartTime(int chargeTime) {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        int starting = 0;</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        for (int j = 1; j &lt; 24; j++) {</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            if (this.getChargingCost(j, chargeTime) &lt; this.getChargingCost(starting, chargeTime)) starting = j;</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        }</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        return starting;</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">}</span>
+<span class="ansi-red-intense-fg ansi-bold">Unresolved dependencies:</span>
+<span class="ansi-red-intense-fg ansi-bold">   - method getChargingCost(int,int)</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab-for-Unit-3">Vocab for Unit 3<a class="anchor-link" href="#Vocab-for-Unit-3"> </a></h2><p><div class="flash">
+    <svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    <strong>Note: </strong>The code may not run as the getChargingCost() method is not defined by the AP exam, and here we are assuming that it works
+</div>* Initialized the classes for each problem</p>
+<ul>
+<li>Enhanced for loop -easier to use for loops, errors will usually happen less, as you don't have to manage steps by themselves, but for loops allows you to control everything about looping
+<pre><code>  for (int i : delimiters) {</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -475,7 +580,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// Iteration </span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 4 - Iteration </span>
 <span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
 <span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">GuessGame</span><span class="p">(){</span>
@@ -518,6 +623,15 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab-for-Unit-4">Vocab for Unit 4<a class="anchor-link" href="#Vocab-for-Unit-4"> </a></h2><ul>
+<li>Usage of static method, intialization of class, boolean statements, and the tester method. </li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -525,14 +639,18 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// Classes</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 5 - Classes</span>
 
+<span class="c1">//initialize the class</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">WordMatch</span> <span class="p">{</span>
     <span class="n">String</span> <span class="n">secret</span><span class="p">;</span>
+    <span class="c1">//setters</span>
     <span class="kd">public</span> <span class="nf">WordMatch</span><span class="p">(</span><span class="n">String</span> <span class="n">secret</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="na">secret</span> <span class="o">=</span> <span class="n">secret</span><span class="p">;</span>
     <span class="p">}</span>
+    <span class="c1">//testing method</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">scoreGuess</span><span class="p">(</span><span class="n">String</span> <span class="n">guess</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//counter variable</span>
         <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">secret</span><span class="p">.</span><span class="na">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
             <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">secret</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
