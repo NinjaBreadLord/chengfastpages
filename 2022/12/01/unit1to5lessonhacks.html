@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      9 min read
     
 </span></p>
 
@@ -390,6 +390,32 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Joe Biden takes 3 damage
+Joe Biden HP: 12
+Joe Biden missed!
+Donald Trump HP: 7
+Joe Biden takes 3 damage
+Joe Biden HP: 12
+Donald Trump takes 2 damage
+Donald Trump HP: 2
+Joe Biden takes 3 damage
+Joe Biden HP: 12
+Joe Biden missed!
+Donald Trump HP: -1
+Donald Trump has perished
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -620,6 +646,32 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Guess a number from 1 to 100
+Too Low
+Guess a number in range 1 to 100
+Too Low
+Guess a number in range 1 to 100
+Too high
+Guess a number in range 1 to 100
+Too Low
+Guess a number in range 1 to 100
+Too Low
+Guess a number in range 1 to 100
+nice
+You guessed: 5 times
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -627,6 +679,13 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Vocab-for-Unit-4">Vocab for Unit 4<a class="anchor-link" href="#Vocab-for-Unit-4"> </a></h2><ul>
 <li>Usage of static method, intialization of class, boolean statements, and the tester method. </li>
+<li>Usage of a Math.random imported class</li>
+<li>Usage of casting into an int from a double
+<pre><code>  int randomint = (int)(Math.random()*(100-1+1)+1);</code></pre>
+<ul>
+<li>math random generates a double </li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -648,7 +707,6 @@ window.onload = wrap_img;
     <span class="kd">public</span> <span class="nf">WordMatch</span><span class="p">(</span><span class="n">String</span> <span class="n">secret</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="na">secret</span> <span class="o">=</span> <span class="n">secret</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="c1">//testing method</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">scoreGuess</span><span class="p">(</span><span class="n">String</span> <span class="n">guess</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">//counter variable</span>
         <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -663,15 +721,129 @@ window.onload = wrap_img;
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="n">guess</span> <span class="o">+</span> <span class="s">&quot; = &quot;</span> <span class="o">+</span> <span class="n">points</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
+<span class="n">WordMatch</span> <span class="n">game</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WordMatch</span><span class="p">(</span><span class="s">&quot;mississippi&quot;</span><span class="p">);</span>
+<span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;i&quot;</span><span class="p">);</span> 
+<span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;iss&quot;</span><span class="p">);</span> 
+<span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;issipp&quot;</span><span class="p">);</span> 
+<span class="n">game</span><span class="p">.</span><span class="na">scoreGuess</span><span class="p">(</span><span class="s">&quot;mississippi&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>i = 4
+iss = 18
+issipp = 36
+mississippi = 121
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab-for-Unit-5">Vocab for Unit 5<a class="anchor-link" href="#Vocab-for-Unit-5"> </a></h2><ul>
+<li>Initialized the class</li>
+<li>Nested For Loop - meant to loop through the single array and compare the word it's on and the word in front(in this case)
+<pre><code>  for (int i = 0; i &lt; this.secret.length(); i++){
+          for (int j = i + 1; j &lt; this.secret.length() + 1; j++) {</code></pre>
+</li>
+<li>Comparing strings - used .equals() which compares the values of two strings
+<pre><code>   if (guess.equals(this.secret.substring(i,j))) {</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Unit 6 - Arrays</span>
+
+<span class="c1">// A. Swap the first and last element of an array</span>
+
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">A</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">};</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">array</span><span class="p">));</span> 
+        <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">array</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">array</span><span class="o">[</span><span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Swapped array: &quot;</span><span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">array</span><span class="p">));</span>  
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// B. Replace all even elements with 0.	</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">B</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">};</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">array</span><span class="p">));</span> 
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+                <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Zero array: &quot;</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">array</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">A</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="n">B</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1, 2, 3, 4]
+Swapped array: [4, 2, 3, 1]
+[1, 2, 3, 4, 5, 6]
+Zero array: [1, 0, 3, 0, 5, 0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocabs-for-Unit-6">Vocabs for Unit 6<a class="anchor-link" href="#Vocabs-for-Unit-6"> </a></h2><ul>
+<li>Initialized class, static variables</li>
+<li>Iterated through a list
+<pre><code>  for(int i = 0; i &lt; array.length; i++){</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
 
 
