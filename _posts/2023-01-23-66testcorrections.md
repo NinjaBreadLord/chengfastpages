@@ -46,3 +46,12 @@ description: Review of my multiple choice exam
 ### Question 39
 ![image](https://user-images.githubusercontent.com/89239598/214118156-8342ab63-2f4c-423e-844f-8c45644087ad.png)
 * 2001 is not divisible by four, thus making my selected answer wrong. 1900 would work better. 
+
+### Question 41
+![image](https://user-images.githubusercontent.com/89239598/214118415-21239657-5a8a-4dcf-b38f-050b0849fcb2.png)
+* I got messed up with the math here. B is the correct answer.
+
+### Question 58
+![image](https://user-images.githubusercontent.com/89239598/214118753-4e0578bf-d19c-426c-8174-6387f9207edd.png)
+* I literally misread the answer and put the wrong change in variable. It should be int pos = j; 
+
