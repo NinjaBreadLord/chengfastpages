@@ -11,41 +11,41 @@ description: Review of my multiple choice exam
 
 > Corrections
 
-### Question 4
+### Question 2
 
-![image](https://user-images.githubusercontent.com/89239598/200256234-67ef248a-cf2f-4734-a0e3-6311526ff892.png)
+![image](https://user-images.githubusercontent.com/89239598/215835177-81c5f12d-bf11-4546-85f8-74073571f03f.png)
 
-* I incorrectly chose the floated value instead of the value that fits the integer primitive. The answer 2.333 should be rounded down to 2. 
+* Misinterpreted the 2d array cell, ```mat[1][3]``` assigns 4, but there are also other cells. 
 
-### Question 10 
+### Question 7
 
-![image](https://user-images.githubusercontent.com/89239598/200256293-daaa3171-f493-461e-a220-56681d733322.png)
+![image](https://user-images.githubusercontent.com/89239598/215835877-31c8b667-10a7-4e45-805a-c37ebd448e8c.png)
 
-* Choice 1(A) would actually work as it returns value 0 from the function seqSearchRecHelper. Choice 2(B) would be the correct answer as if the data does contain the value 5, the function would instead return -1 creating an out of bounds error.
+* Selected option (E) would be incorrect as it does not combine the two binary strings together, B actually represents the combined string properly.
 
-### Question 14
+### Question 12
 
-![image](https://user-images.githubusercontent.com/89239598/200256362-a983e766-96f6-47e1-9d6d-d7e62ebebd0b.png)
+![image](https://user-images.githubusercontent.com/89239598/215836436-95692c25-9610-4afa-a986-c03323ea00f5.png)
 
-* Because of the usage of an enhanced for each loop, there is no need for the method .get does not need to be used making answer choice D wrong. ```v.getMileage()``` would be better as it only uses the variable "v" and nothing else, which is the proper way in using an enhanced loop. 
+* Although the first line of "Alex Bob Carl" is proper, the second line doesn't repeat itself. The second row would set all the names as "Alex" thus D is correct. 
 
-### Question 15
+### Question 20
  
-![image](https://user-images.githubusercontent.com/89239598/200256409-bbf93c1d-cae1-4c96-8e1d-eec4a0b542df.png)
+![image](https://user-images.githubusercontent.com/89239598/215836906-00f1792e-fc94-4ff3-a464-870c64a0a33c.png)
 
-* My selected answer(D) is incorrect because choice two does not work. Choice two provides ```data[k + 1]``` which would create an out of bounds error on the last part of the array. Choice 1 is correct, and therefore choice A would be correct. 
+* The character "!" would actually be printed 6 times, my selected answer of 4 would be correct if it was printed in all of the array. 
 
-### Question 17
+### Question 21
 
-![image](https://user-images.githubusercontent.com/89239598/200256451-e8f1d220-d24d-4a27-af32-2f4806171438.png)
+![image](https://user-images.githubusercontent.com/89239598/215837278-47355e92-3183-4cc7-bcfa-9793f18e5c34.png)
 
-* Choice D is incorrect as the last value of the array will not be affected by the for loop as the for loop iterates through the length of the loop minus 1. Choice C would be better as it displays the correct final value of 7. 
+* Miscalculated the looping, it would actually be 5 instead of 4. 
 
-### Question 19 (Review Demorgan's Law)
+### Question 26
 
-![image](https://user-images.githubusercontent.com/89239598/200256503-3a97e22d-3f6a-41bd-bf47-88fa5034c4a6.png)
+![image](https://user-images.githubusercontent.com/89239598/215837886-8594d827-00ca-4037-8b1c-7ab7b556367d.png)
 
-* ```!(!(a != b))``` would just be ```(a != b)```, not ```(a==b)``` which was my selected answer. B would be a better choice because it contains the proper change through DeMorgan's Law. 
+* "On" is not a palindrome thus would not be equal to itself printed backwards. "noon" would be much more fitting as it is a palindrome 
 
 ### Question 23 (Review)
 
@@ -53,8 +53,21 @@ description: Review of my multiple choice exam
 
 * Here baboon would actually be inserted at the end of the array list as it begins with the letter 'b' and will be added at size-k which is at the end. From there, my order is correct in "bear" following "zebra" etc. I think I had a little trouble understanding the substring and remove commands, and thus need to look at it more in depth. 
 
-### Question 33 
+### Question 35
 
-![image](https://user-images.githubusercontent.com/89239598/200256624-d4476df2-6cb5-446c-b5d9-08f3cb62fb67.png)
+![image](https://user-images.githubusercontent.com/89239598/215838403-ee60e335-4e2d-4b03-895b-2ab17d632eb1.png)
 
-* Here is just a case of remembering the conditionals. This is an infinite loop as the condition k < 4 will never be satisfied. ```||``` means or, meaing that either one may work, which I forgot during the exam. 
+* Just a case of reading the code improperly. Interpreted as printing at index k which would be incorrect. 
+
+### Question 42
+
+![image](https://user-images.githubusercontent.com/89239598/215838706-382fe626-2476-4014-afe9-7b5abe55e49b.png)
+
+* 0 would be included in this array, I was close but just forgot one integer. 
+
+### Question 50 
+![image](https://user-images.githubusercontent.com/89239598/215838949-95e9613a-5d5d-4f57-a7a4-d222609e4e0a.png)
+
+* Read loop text wrong. C would be right 
+
+
