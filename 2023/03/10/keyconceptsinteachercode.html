@@ -144,21 +144,22 @@ window.onload = wrap_img;
 <li><p>2D Arrays are slightly tricky - the outer int[][] array is considered a non-primitive data type, meaning that values like null can be stored. However, within each array only primitive data types of the respective variable type can be stored.</p>
 </li>
 <li><p>Within Mort's code he defines various methods within the Diverse array class, beginning with the arraySum method. It takes in an array, and finds the sum of the integers in the array.</p>
-
-<pre><code>public class DiverseArray {
-  public static int arraySum(int[] arr) {
-      int sum = 0;    
-
-      for (int num : arr) {
-          sum += num;
-          System.out.print(num + "\t"); 
-      }
-
-      return sum;
-  }</code></pre>
 </li>
-<li><p>Next, he creates the sum of 2d arrays. Within the method he uses the other method defined previously to return a list of the sums of each row of the 2d array.</p>
-</li>
+</ul>
+
+<pre><code> public class DiverseArray {
+    public static int arraySum(int[] arr) {
+        int sum = 0;    
+
+        for (int num : arr) {
+            sum += num;
+            System.out.print(num + "\t"); 
+        }
+
+        return sum;
+    }</code></pre>
+<ul>
+<li>Next, he creates the sum of 2d arrays. Within the method he uses the other method defined previously to return a list of the sums of each row of the 2d array. </li>
 </ul>
 
 <pre><code>public static int[] rowSums(int[][] arr2D) {
