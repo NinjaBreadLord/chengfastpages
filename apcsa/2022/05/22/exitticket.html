@@ -136,66 +136,58 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>%%html</p>
 <html>
-<head>
-  <title>Typing Test</title>
-</head>
-<body>
-  <h1>Typing Test</h1>
-  <p id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  <textarea id="input" placeholder="Start typing here..."></textarea>
-  <button id="startButton">Start Test</button>
-  <p id="result"></p>
-
-  <script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const quoteElement = document.getElementById('quote');
-    const inputElement = document.getElementById('input');
-    const startButton = document.getElementById('startButton');
-    const resultElement = document.getElementById('result');
-
-    let quote = quoteElement.textContent.trim();
-    let startTime, endTime;
-
-    function startTest() {
-      inputElement.disabled = false;
-      inputElement.value = '';
-      inputElement.focus();
-      startButton.textContent = 'Restart Test';
-      resultElement.textContent = '';
-      startTime = new Date();
-    }
-
-    function endTest() {
-      endTime = new Date();
-      inputElement.disabled = true;
-      let userText = inputElement.value.trim();
-      let words = userText.split(' ');
-      let quoteWords = quote.split(' ');
-      let correctCount = 0;
-
-      for (let i = 0; i < quoteWords.length; i++) {
-        if (words[i] && words[i] === quoteWords[i]) {
-          correctCount++;
+  <head>
+    <title>Typing Test</title>
+  </head>
+  <body>
+    <h1>Typing Test</h1>
+    <p id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <textarea id="input" placeholder="Start typing here..."></textarea>
+    <button id="startButton">Start Test</button>
+    <p id="result"></p>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const quoteElement = document.getElementById('quote');
+        const inputElement = document.getElementById('input');
+        const startButton = document.getElementById('startButton');
+        const resultElement = document.getElementById('result');
+        let quote = quoteElement.textContent.trim();
+        let startTime, endTime;
+        function startTest() {
+          inputElement.disabled = false;
+          inputElement.value = '';
+          inputElement.focus();
+          startButton.textContent = 'Restart Test';
+          resultElement.textContent = '';
+          startTime = new Date();
         }
-      }
-
-      let accuracy = (correctCount / quoteWords.length) * 100;
-      let minutes = (endTime - startTime) / 60000;
-      let wpm = Math.round(quoteWords.length / minutes);
-
-      resultElement.textContent = `Accuracy: ${accuracy.toFixed(2)}% | WPM: ${wpm}`;
-    }
-
-    startButton.addEventListener('click', function() {
-      if (startButton.textContent === 'Start Test') {
-        startTest();
-      } else {
-        endTest();
-      }
-    });
-  });
-</script>
-</body>
+        function endTest() {
+          endTime = new Date();
+          inputElement.disabled = true;
+          let userText = inputElement.value.trim();
+          let words = userText.split(' ');
+          let quoteWords = quote.split(' ');
+          let correctCount = 0;
+          for (let i = 0; i < quoteWords.length; i++) {
+            if (words[i] && words[i] === quoteWords[i]) {
+              correctCount++;
+            }
+          }
+          let accuracy = (correctCount / quoteWords.length) * 100;
+          let minutes = (endTime - startTime) / 60000;
+          let wpm = Math.round(quoteWords.length / minutes);
+          resultElement.textContent = `Accuracy: ${accuracy.toFixed(2)}% | WPM: ${wpm}`;
+        }
+        startButton.addEventListener('click', function() {
+          if (startButton.textContent === 'Start Test') {
+            startTest();
+          } else {
+            endTest();
+          }
+        });
+      });
+  </script>
+  </body>
 </html>
 </div>
 </div>
