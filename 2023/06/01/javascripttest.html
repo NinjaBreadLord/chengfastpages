@@ -125,6 +125,14 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Here I am just using the Newscatcher API to generate 4 news articles recently off of keywords in the search bar.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -150,8 +158,10 @@ window.onload = wrap_img;
   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
     <span class="kr">const</span> <span class="nx">apiKey</span> <span class="o">=</span> <span class="s1">&#39;wBn2KgxIdqAZCxawJSL8sWJTShXlc5lU70mmCN5mmqI&#39;</span><span class="p">;</span>
     <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;https://api.newscatcherapi.com/v2/search?q=&#39;</span><span class="p">;</span>
+
     <span class="kr">const</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.search&#39;</span><span class="p">);</span>
     <span class="kr">const</span> <span class="nx">searchInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;search-input&#39;</span><span class="p">);</span>
+  
     <span class="kr">const</span> <span class="nx">newsTable</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;news-table&#39;</span><span class="p">);</span>
 
     <span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span> <span class="nx">e</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -175,7 +185,8 @@ window.onload = wrap_img;
               <span class="nx">noResultsRow</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">noResultsMessage</span><span class="p">);</span>
               <span class="nx">newsTable</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">noResultsRow</span><span class="p">);</span>
             <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-              <span class="kr">const</span> <span class="nx">results</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">articles</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">4</span><span class="p">);</span>
+              <span class="c1">//I only want four articles so it won&#39;t be cluttered</span>
+              <span class="kr">const</span> <span class="nx">results</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">articles</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span> <span class="mf">4</span><span class="p">);</span> 
               <span class="nx">results</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">article</span> <span class="p">=&gt;</span> <span class="p">{</span>
                 <span class="kr">const</span> <span class="nx">title</span> <span class="o">=</span> <span class="nx">article</span><span class="p">.</span><span class="nx">title</span><span class="p">;</span>
                 <span class="kr">const</span> <span class="nx">link</span> <span class="o">=</span> <span class="nx">article</span><span class="p">.</span><span class="nx">link</span><span class="p">;</span>
@@ -201,7 +212,6 @@ window.onload = wrap_img;
     <span class="p">});</span>
   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 
     </div>
@@ -232,8 +242,10 @@ window.onload = wrap_img;
   <script>
     const apiKey = 'wBn2KgxIdqAZCxawJSL8sWJTShXlc5lU70mmCN5mmqI';
     const url = 'https://api.newscatcherapi.com/v2/search?q=';
+
     const form = document.querySelector('.search');
     const searchInput = document.getElementById('search-input');
+  
     const newsTable = document.getElementById('news-table');
 
     form.addEventListener('submit', e => {
@@ -257,7 +269,8 @@ window.onload = wrap_img;
               noResultsRow.appendChild(noResultsMessage);
               newsTable.appendChild(noResultsRow);
             } else {
-              const results = data.articles.slice(0, 4);
+              //I only want four articles so it won't be cluttered
+              const results = data.articles.slice(0, 4); 
               results.forEach(article => {
                 const title = article.title;
                 const link = article.link;
@@ -289,23 +302,6 @@ window.onload = wrap_img;
 
 </div>
 
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
